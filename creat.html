@@ -4,51 +4,84 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My GitHub Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background: linear-gradient(120deg, #84fab0, #8fd3f4);
+            background: linear-gradient(120deg, #4facfe, #00f2fe);
             color: #333;
         }
         header {
             text-align: center;
             padding: 2em 0;
-            background: #333;
+            background: #222;
             color: white;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
         }
         header h1 {
-            font-size: 2.5em;
+            font-size: 3em;
             margin: 0;
         }
         nav {
-            text-align: center;
             margin-top: 1em;
         }
         nav a {
             margin: 0 1em;
             text-decoration: none;
-            color: white;
+            color: #00f2fe;
             font-weight: bold;
+            font-size: 1.2em;
         }
         nav a:hover {
-            text-decoration: underline;
+            color: #4facfe;
         }
         section {
-            max-width: 800px;
+            max-width: 900px;
             margin: 2em auto;
-            padding: 1em;
+            padding: 1.5em;
             background: white;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-            border-radius: 8px;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+            border-radius: 12px;
+        }
+        section h2 {
+            text-align: center;
+            margin-bottom: 1em;
+            font-size: 2em;
+            color: #222;
+        }
+        .btn {
+            display: inline-block;
+            padding: 0.5em 1.5em;
+            background: #00f2fe;
+            color: white;
+            border: none;
+            border-radius: 25px;
+            text-decoration: none;
+            font-size: 1em;
+            transition: background 0.3s ease;
+        }
+        .btn:hover {
+            background: #4facfe;
         }
         footer {
             text-align: center;
             padding: 1em 0;
-            background: #333;
+            background: #222;
             color: white;
             margin-top: 2em;
+        }
+        .social-icons a {
+            margin: 0 0.5em;
+            color: white;
+            font-size: 1.5em;
+            transition: color 0.3s ease;
+        }
+        .social-icons a:hover {
+            color: #00f2fe;
         }
     </style>
 </head>
@@ -64,17 +97,23 @@
     <section id="about">
         <h2>About Me</h2>
         <p>Hello! I am a web developer passionate about creating beautiful and functional websites. This is my personal page hosted on GitHub Pages.</p>
+        <a href="#projects" class="btn">Explore My Projects</a>
     </section>
     <section id="projects">
         <h2>My Projects</h2>
         <ul>
-            <li><strong>Project 1:</strong> <a href="#">Link to Project</a></li>
-            <li><strong>Project 2:</strong> <a href="#">Link to Project</a></li>
+            <li><strong>Project 1:</strong> <a href="#">Awesome App</a></li>
+            <li><strong>Project 2:</strong> <a href="#">Creative Design</a></li>
         </ul>
     </section>
     <section id="contact">
         <h2>Contact Me</h2>
         <p>If you'd like to get in touch, feel free to reach out via <a href="mailto:your.email@example.com">email</a>.</p>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-github"></i></a>
+        </div>
     </section>
     <footer>
         &copy; 2025 Your Name. All Rights Reserved.
